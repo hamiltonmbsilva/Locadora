@@ -20,7 +20,8 @@ namespace Domain.Models
         [Required, Column("cpf"), MaxLength(11)]
         public string CPF { get; set; }
 
-        [Required, Column("data_nascimento"), MaxLength(11)]
+        [Required, Column("data_nascimento")]
+        [DisplayFormat(DataFormatString = "{0:MM-dd-yyyy}")]
         public DateTime DataNascimento { get; set; }
 
         #endregion

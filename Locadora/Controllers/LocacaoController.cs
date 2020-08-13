@@ -4,6 +4,8 @@ using Service;
 
 namespace Controller.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class LocacaoController : ControllerBase
     {
         private readonly LocacaoService _serviceLocacao;

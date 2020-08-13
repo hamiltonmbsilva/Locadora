@@ -55,7 +55,7 @@ namespace Repository.Migrations
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     nome = table.Column<string>(maxLength: 200, nullable: false),
                     cpf = table.Column<string>(maxLength: 11, nullable: false),
-                    data_nascimento = table.Column<DateTime>(maxLength: 11, nullable: false)
+                    data_nascimento = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>
                 {

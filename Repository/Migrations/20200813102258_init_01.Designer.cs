@@ -9,7 +9,7 @@ using Repository.Context;
 namespace Repository.Migrations
 {
     [DbContext(typeof(BaseContext))]
-    [Migration("20200813010450_init_01")]
+    [Migration("20200813102258_init_01")]
     partial class init_01
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -34,8 +34,7 @@ namespace Repository.Migrations
 
                     b.Property<DateTime>("DataNascimento")
                         .HasColumnName("data_nascimento")
-                        .HasColumnType("datetime(6)")
-                        .HasMaxLength(11);
+                        .HasColumnType("datetime(6)");
 
                     b.Property<string>("Nome")
                         .IsRequired()

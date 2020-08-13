@@ -34,18 +34,7 @@ namespace Locadora
             options.UseMySql(stringConexao));
 
             services.AddControllersWithViews();
-            //IServiceCollection serviceCollection = services.AddDbContext<BaseContext>(options => options.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
-
-            //services.AddAutoMapper(typeof(AutoMapping));
-            //#region Banco de dados
-
-            ////services.AddEntityFrameworkNpgsql().AddDbContext<BaseContext>();
-            //services.AddEntityFrameworkMySql().AddDbContext<BaseContext>();   
-
-            //// Singleton - cria uma instancia e toda vez que for chamada, usar� a mesma instancia
-            //services.AddSingleton<BaseContext>();
-
-            //#endregion
+            
 
             #region Repository
 

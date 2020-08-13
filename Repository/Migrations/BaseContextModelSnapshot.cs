@@ -32,8 +32,7 @@ namespace Repository.Migrations
 
                     b.Property<DateTime>("DataNascimento")
                         .HasColumnName("data_nascimento")
-                        .HasColumnType("datetime(6)")
-                        .HasMaxLength(11);
+                        .HasColumnType("datetime(6)");
 
                     b.Property<string>("Nome")
                         .IsRequired()

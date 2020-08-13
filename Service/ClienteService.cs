@@ -121,6 +121,29 @@ namespace Service
             }
         }
 
+        public bool ExcluirCliente(int id)
+        {
+            try
+            {
+                if (id > 0)
+                {
+                    var cliente = _repositoryCliente.GetById(id);
+
+                    if (cliente != null)
+                    {
+                        _repositoryCliente.Delete(x => x.Id == id);
+                        return true;
+                    }
+                }
+
+                return false;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
 
 
     }

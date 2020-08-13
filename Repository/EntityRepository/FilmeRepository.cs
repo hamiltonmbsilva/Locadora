@@ -1,5 +1,6 @@
 ﻿using Domain.Models;
 using Repository.Context;
+using System.Linq;
 
 namespace Repository.EntityRepository
 {
@@ -7,6 +8,11 @@ namespace Repository.EntityRepository
     {
         public FilmeRepository(BaseContext context) : base(context)
         {
+        }
+
+        public Filme GetById(int id)
+        {
+            return GetAll().FirstOrDefault(x => x.Id == id);
         }
     }
 }
