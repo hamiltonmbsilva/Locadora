@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Domain.DTO
 {
-    class ClienteDTO
+    public class ClienteDTO
     {
         public string Nome { get; set; }        
         public string CPF { get; set; }        

@@ -9,6 +9,9 @@ namespace Domain.Mapping
         public LocacaoMapping()
         {
             CreateMap<LocacaoDTO, Locacao>().ReverseMap();
+            CreateMap<AtrasadoDTO, Locacao>().ReverseMap();
+            CreateMap<FilmesNaoAlugadosDTO, Locacao>().ReverseMap();
+            CreateMap<SegundoDTO, Locacao>().ReverseMap();
         }
     }
 }

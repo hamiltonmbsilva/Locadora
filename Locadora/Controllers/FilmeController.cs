@@ -27,7 +27,7 @@ namespace Controller.Controllers
         {
             try
             {
-                var cliente = _serviceFilme.BuscarTodosCliente().ToList();
+                var cliente = _serviceFilme.BuscarTodosFilmes().ToList();
 
                 return Ok(cliente);
             }
@@ -65,8 +65,14 @@ namespace Controller.Controllers
             }
         }
 
-        //POST: api/cliente
-        [HttpPost]
+        //{
+        //  "Titulo":"O RESGATE",
+        //  "ClassificacaoIndicativa":"14",
+        //  "Tipo":"0"         
+        //}
+
+    //POST: api/cliente
+    [HttpPost]
         public ActionResult<Filme> Post([FromBody] Filme filme)
         {
             try

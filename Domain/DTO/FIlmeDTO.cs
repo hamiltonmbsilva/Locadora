@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Domain.DTO
 {
-    class FIlmeDTO
+    public class FIlmeDTO
     {
         public string Titulo { get; set; }       
         public int ClassificacaoIndicativa { get; set; }       

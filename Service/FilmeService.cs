@@ -2,6 +2,7 @@
 using Repository.EntityRepository;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Service
 {
@@ -14,7 +15,7 @@ namespace Service
             _repositoryFilme = repositoryFilme;
         }
 
-        public IEnumerable<Filme> BuscarTodosCliente()
+        public IEnumerable<Filme> BuscarTodosFilmes()
         {
             try
             {
@@ -38,6 +39,20 @@ namespace Service
                 }
 
                 return null;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public IList<Filme> BuscarPeloIdNaoAlugados()
+        {
+            try
+            {               
+                
+               return _repositoryFilme.GetByIdNaoAlugados().ToList();
+               
             }
             catch (Exception ex)
             {

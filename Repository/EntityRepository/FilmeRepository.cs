@@ -1,5 +1,6 @@
 ﻿using Domain.Models;
 using Repository.Context;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Repository.EntityRepository
@@ -13,6 +14,13 @@ namespace Repository.EntityRepository
         public Filme GetById(int id)
         {
             return GetAll().FirstOrDefault(x => x.Id == id);
+        }
+
+        public IQueryable<Filme> GetByIdNaoAlugados()
+        {
+            return GetAll()
+                .Where(x => x.Locacaos.Count == 0);
+               
         }
     }
 }

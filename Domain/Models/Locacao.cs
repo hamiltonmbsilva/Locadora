@@ -14,9 +14,11 @@ namespace Domain.Models
         public int Id { get; set; }
 
         [Required, Column("data_locacao")]
+        [DisplayFormat(DataFormatString = "{0:MM-dd-yyyy}")]
         public DateTime DataLocacao { get; set; }
 
         [Required, Column("data_devolucao")]
+        [DisplayFormat(DataFormatString = "{0:MM-dd-yyyy}")]
         public DateTime DataDevolucao { get; set; }
 
         #endregion
