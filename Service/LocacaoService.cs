@@ -52,6 +52,31 @@ namespace Service
                 throw ex;
             }
         }
+        public IEnumerable<Locacao> BuscarPorData(DateTime dataAtual, DateTime dataAno)
+        {
+            try
+            {
+                var todosLocacao = _repositoryLocacao.BuscarPorData(dataAtual, dataAno);
+                return todosLocacao;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        
+        public IEnumerable<Locacao> BuscarPorDatatres(DateTime dataAtual, DateTime dataAno)
+        {
+            try
+            {
+                var todosLocacao = _repositoryLocacao.BuscarPorDatatres(dataAtual, dataAno);
+                return todosLocacao;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
 
         public Locacao BuscarPeloId(int id)
         {

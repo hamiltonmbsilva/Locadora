@@ -27,13 +27,30 @@ namespace Repository.EntityRepository
         } 
         
         public IQueryable<Locacao> BuscarTodosNaoAlugados()
-        {
-            
+        {  
 
             return GetAll()                
                 .Include(x => x.Filme)
                 .Where(x => x.FilmeId != x.Filme.Id);
                 
+        }
+        
+        public IQueryable<Locacao> BuscarPorData(DateTime dataAtual, DateTime dataAno)
+        {
+
+            return GetAll()
+                .Include(x => x.Filme)
+                .OrderByDescending(x => x.Filme.Locacaos.Count)
+                .Where(x => x.DataLocacao <= dataAno);              
+        }
+        
+        public IQueryable<Locacao> BuscarPorDatatres(DateTime dataAtual, DateTime dataAno)
+        {
+
+            return GetAll()
+                .Include(x => x.Filme)
+                .OrderBy(x => x.Filme.Locacaos.Count)
+                .Where(x => x.DataLocacao <= dataAno);              
         }
     }
 }

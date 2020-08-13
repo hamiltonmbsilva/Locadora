@@ -202,13 +202,83 @@ namespace Controller.Controllers
 
                 var locacao = _serviceLocacao.BuscarTodosLocacao().ToList();
                 locacao.OrderByDescending(x => x.Cliente.Locacaos.Count());
-                locacao.Distinct().GroupBy(x => x.ClientId);
+                locacao.GroupBy(x => x.ClientId);
                 var segundoCliente = locacao[1];                
 
 
                 var clienteDTO = _mapper.Map<SegundoDTO>(segundoCliente);
 
                 return Ok(clienteDTO);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        //GET: api/cliente 
+        [HttpGet("cincoFilmes")]
+        public ActionResult<Locacao> CincoFilmes()
+        {
+            try
+            {
+                int i;
+                IList<Locacao> segundoCliente = new List<Locacao>();
+
+                var dataAno = DateTime.Now.AddYears(1);
+                var dataAtual = DateTime.Now;
+
+                var filmes = _serviceLocacao.BuscarPorData(dataAtual, dataAno).ToList();
+
+                foreach(Locacao filme in filmes)
+                {
+                    for(i = 0; i < 5 ; i++)
+                     {
+                        segundoCliente.Add(filme);
+                        
+                     }
+                    break;
+                }
+               
+
+                var locacaoDTO = _mapper.Map<List<FilmesNaoAlugadosDTO>>(segundoCliente);
+
+                return Ok(locacaoDTO);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        //GET: api/cliente 
+        [HttpGet("tresFilmes")]
+        public ActionResult<Locacao> TresFilmes()
+        {
+            try
+            {
+                int i;
+                IList<Locacao> segundoCliente = new List<Locacao>();
+
+                var dataAno = DateTime.Now.AddYears(1);
+                var dataAtual = DateTime.Now;
+
+                var filmes = _serviceLocacao.BuscarPorDatatres(dataAtual, dataAno).ToList();
+
+                foreach (Locacao filme in filmes)
+                {
+                    for (i = 0; i < 3; i++)
+                    {
+                        segundoCliente.Add(filme);
+
+                    }
+                    break;
+                }
+
+
+                var locacaoDTO = _mapper.Map<List<FilmesNaoAlugadosDTO>>(segundoCliente);
+
+                return Ok(locacaoDTO);
             }
             catch (Exception ex)
             {
