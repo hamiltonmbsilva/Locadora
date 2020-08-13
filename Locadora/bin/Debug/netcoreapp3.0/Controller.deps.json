@@ -10,7 +10,7 @@
       "NETCOREAPP",
       "NETCOREAPP3_0"
     ],
-    "languageVersion": "",
+    "languageVersion": "8.0",
     "platform": "",
     "allowUnsafe": false,
     "warningsAsErrors": false,
@@ -2424,6 +2424,7 @@
       },
       "Service/1.0.0": {
         "dependencies": {
+          "Domain": "1.0.0",
           "Repository": "1.0.0"
         },
         "runtime": {

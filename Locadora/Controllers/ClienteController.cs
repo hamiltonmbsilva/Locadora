@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 using Service;
 using System;
@@ -20,6 +21,22 @@ namespace Controller.Controllers
             _mapper = mapper;
             _serviceCliente = serviceCliente;
 
+        }
+
+        //GET: api/cliente 
+        [HttpGet]
+        public ActionResult<Cliente> GetAll()
+        {
+            try
+            {
+                var cliente = _serviceCliente.BuscarTodosCliente().ToList();
+
+                return Ok(cliente);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
     }
 }

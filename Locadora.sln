@@ -3,13 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controller", "Locadora\Controller.csproj", "{CA7EA072-B4C6-4660-8E56-C419228351C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Controller", "Locadora\Controller.csproj", "{CA7EA072-B4C6-4660-8E56-C419228351C0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EC6D73A0-9A29-4CBF-B9DE-31680EE82537} = {EC6D73A0-9A29-4CBF-B9DE-31680EE82537}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{EC6D73A0-9A29-4CBF-B9DE-31680EE82537}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{EC6D73A0-9A29-4CBF-B9DE-31680EE82537}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{062DB129-5E2C-418E-8966-68F94955C2A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{062DB129-5E2C-418E-8966-68F94955C2A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{722BEA65-253E-426A-B7C7-2EDEF11BAD6D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Service\Service.csproj", "{722BEA65-253E-426A-B7C7-2EDEF11BAD6D}"
 	ProjectSection(ProjectDependencies) = postProject
 		{EC6D73A0-9A29-4CBF-B9DE-31680EE82537} = {EC6D73A0-9A29-4CBF-B9DE-31680EE82537}
 	EndProjectSection
