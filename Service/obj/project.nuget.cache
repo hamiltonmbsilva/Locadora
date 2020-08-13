@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "b4GA6+dSBFE5pUXzyO1e06R/sSTpnCS3reMc7XIJiHtCRzT9f7/Gu8JLOePuOxHLZx4QVUDbJ9oBMfV8Evy+LA==",
+  "success": false,
+  "projectFilePath": "F:\\Prova Dirheta\\Locadora\\Service\\Service.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Hamil\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Hamil\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "O projeto Repository não é compatível com netstandard2.0 (.NETStandard,Version=v2.0). O projeto Repository dá suporte a: netcoreapp3.0 (.NETCoreApp,Version=v3.0)",
+      "libraryId": "Repository",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
+}

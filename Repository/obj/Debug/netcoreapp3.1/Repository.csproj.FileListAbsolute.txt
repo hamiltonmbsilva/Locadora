@@ -1,0 +1,15 @@
+F:\Prova Dirheta\Locadora\Repository\bin\Debug\netcoreapp3.1\Repository.deps.json
+F:\Prova Dirheta\Locadora\Repository\bin\Debug\netcoreapp3.1\Repository.runtimeconfig.json
+F:\Prova Dirheta\Locadora\Repository\bin\Debug\netcoreapp3.1\Repository.runtimeconfig.dev.json
+F:\Prova Dirheta\Locadora\Repository\bin\Debug\netcoreapp3.1\Repository.dll
+F:\Prova Dirheta\Locadora\Repository\bin\Debug\netcoreapp3.1\Repository.pdb
+F:\Prova Dirheta\Locadora\Repository\bin\Debug\netcoreapp3.1\Domain.dll
+F:\Prova Dirheta\Locadora\Repository\bin\Debug\netcoreapp3.1\Domain.pdb
+F:\Prova Dirheta\Locadora\Repository\obj\Debug\netcoreapp3.1\Repository.csprojAssemblyReference.cache
+F:\Prova Dirheta\Locadora\Repository\obj\Debug\netcoreapp3.1\Repository.AssemblyInfoInputs.cache
+F:\Prova Dirheta\Locadora\Repository\obj\Debug\netcoreapp3.1\Repository.AssemblyInfo.cs
+F:\Prova Dirheta\Locadora\Repository\obj\Debug\netcoreapp3.1\Repository.csproj.CoreCompileInputs.cache
+F:\Prova Dirheta\Locadora\Repository\obj\Debug\netcoreapp3.1\Repository.csproj.CopyComplete
+F:\Prova Dirheta\Locadora\Repository\obj\Debug\netcoreapp3.1\Repository.dll
+F:\Prova Dirheta\Locadora\Repository\obj\Debug\netcoreapp3.1\Repository.pdb
+F:\Prova Dirheta\Locadora\Repository\obj\Debug\netcoreapp3.1\Repository.genruntimeconfig.cache

@@ -1,0 +1,14 @@
+F:\Prova Dirheta\Locadora\Service\obj\Debug\netstandard2.0\Service.csprojAssemblyReference.cache
+F:\Prova Dirheta\Locadora\Service\obj\Debug\netstandard2.0\Service.AssemblyInfoInputs.cache
+F:\Prova Dirheta\Locadora\Service\obj\Debug\netstandard2.0\Service.AssemblyInfo.cs
+F:\Prova Dirheta\Locadora\Service\obj\Debug\netstandard2.0\Service.csproj.CoreCompileInputs.cache
+F:\Prova Dirheta\Locadora\Service\bin\Debug\netstandard2.0\Service.deps.json
+F:\Prova Dirheta\Locadora\Service\bin\Debug\netstandard2.0\Service.dll
+F:\Prova Dirheta\Locadora\Service\bin\Debug\netstandard2.0\Service.pdb
+F:\Prova Dirheta\Locadora\Service\bin\Debug\netstandard2.0\Domain.dll
+F:\Prova Dirheta\Locadora\Service\bin\Debug\netstandard2.0\Repository.dll
+F:\Prova Dirheta\Locadora\Service\bin\Debug\netstandard2.0\Repository.pdb
+F:\Prova Dirheta\Locadora\Service\bin\Debug\netstandard2.0\Domain.pdb
+F:\Prova Dirheta\Locadora\Service\obj\Debug\netstandard2.0\Service.csproj.CopyComplete
+F:\Prova Dirheta\Locadora\Service\obj\Debug\netstandard2.0\Service.dll
+F:\Prova Dirheta\Locadora\Service\obj\Debug\netstandard2.0\Service.pdb
