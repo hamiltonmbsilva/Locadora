@@ -223,6 +223,8 @@ namespace Controller.Controllers
             try
             {
                 int i;
+                int quant = 0;
+
                 IList<Locacao> segundoCliente = new List<Locacao>();
 
                 var dataAno = DateTime.Now.AddYears(1);
@@ -235,9 +237,12 @@ namespace Controller.Controllers
                     for(i = 0; i < 5 ; i++)
                      {
                         segundoCliente.Add(filme);
-                        
-                     }
-                    break;
+                        break;
+                    }
+                    quant = quant + 1;
+
+                    if (quant == 3)
+                        break;
                 }
                
 
@@ -258,9 +263,11 @@ namespace Controller.Controllers
             try
             {
                 int i;
+                int quant = 0;
+
                 IList<Locacao> segundoCliente = new List<Locacao>();
 
-                var dataAno = DateTime.Now.AddYears(1);
+                var dataAno = DateTime.Now.AddDays(7);
                 var dataAtual = DateTime.Now;
 
                 var filmes = _serviceLocacao.BuscarPorDatatres(dataAtual, dataAno).ToList();
@@ -270,9 +277,14 @@ namespace Controller.Controllers
                     for (i = 0; i < 3; i++)
                     {
                         segundoCliente.Add(filme);
-
+                        break;
                     }
-                    break;
+
+                    quant = quant + 1;
+
+                    if (quant == 3)
+                        break;
+                   
                 }
 
 
